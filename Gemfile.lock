@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/200Creative/spree_bootstrap_frontend.git
+  revision: f6345186a2815e281181a4b0cf74b59f52443c8f
+  branch: 2-3-stable
+  specs:
+    spree_bootstrap_frontend (2.3.0)
+      bootstrap-kaminari-views (~> 0.0.3)
+      bootstrap-sass (~> 3.2.0)
+      spree_core (~> 2.3.0)
+      spree_frontend (~> 2.3.0)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: 9d4617334c872e591839a930c2aa52c834ce0896
   branch: 2-3-stable
@@ -123,7 +134,13 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
+    bootstrap-kaminari-views (0.0.3)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
     builder (3.2.2)
     cancan (1.6.10)
     cancancan (1.8.4)
@@ -141,6 +158,7 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     colorize (0.7.3)
+    daemons (1.1.9)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -154,6 +172,8 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
+    eventmachine (1.0.3-x86-mingw32)
     execjs (2.2.1)
     ffaker (1.24.0)
     font-awesome-rails (4.1.0.0)
@@ -190,6 +210,8 @@ GEM
       i18n (~> 0.6.4)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     nokogiri (1.6.3.1-x86-mingw32)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
@@ -256,6 +278,10 @@ GEM
       sprockets (~> 2.8)
     state_machine (1.2.0)
     stringex (1.5.1)
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -295,7 +321,9 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree!
   spree_auth_devise!
+  spree_bootstrap_frontend!
   spree_gateway!
+  thin
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)
