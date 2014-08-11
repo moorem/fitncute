@@ -10,6 +10,13 @@ GIT
       spree_frontend (~> 2.3.0)
 
 GIT
+  remote: git://github.com/jdutil/spree_contact_us.git
+  revision: b5298e575f6d1663e0630054f7835c6a32981288
+  specs:
+    spree_contact_us (2.2.0)
+      spree_core (~> 2.3.0.beta)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: 9d4617334c872e591839a930c2aa52c834ce0896
   branch: 2-3-stable
@@ -142,6 +149,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     bootstrap-kaminari-views (0.0.3)
       kaminari (>= 0.13)
@@ -179,6 +187,7 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.2.1)
     ffaker (1.24.0)
@@ -216,6 +225,8 @@ GEM
       i18n (~> 0.6.4)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     nokogiri (1.6.3.1-x86-mingw32)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
@@ -226,6 +237,7 @@ GEM
       mime-types
     paranoia (2.0.2)
       activerecord (~> 4.0)
+    pg (0.17.1)
     pg (0.17.1-x86-mingw32)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
@@ -270,9 +282,9 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
-    sdoc (0.4.0)
-      json (~> 1.8)
-      rdoc (~> 4.0, < 5.0)
+    sdoc (0.4.1)
+      json (~> 1.7, >= 1.7.7)
+      rdoc (~> 4.0)
     select2-rails (3.5.9)
       thor (~> 0.14)
     sprockets (2.11.0)
@@ -331,6 +343,7 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_bootstrap_frontend!
+  spree_contact_us!
   spree_gateway!
   spree_static_content!
   thin
