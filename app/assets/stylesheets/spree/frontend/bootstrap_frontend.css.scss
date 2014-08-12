@@ -5,17 +5,18 @@ $icon-font-path: "../../bootstrap/";
 
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
-  background: #1c5c92 asset-url('spree_header.jpg') center center;
+  background: #444; /*asset-url('spree_header.jpg') center center;*/
   background-size: cover;
   margin-bottom: $line-height-computed;
   #header {
-    background: rgba(9, 22, 33, 0.4);
-    padding: $line-height-computed 0;
+    /*background: rgba(9, 22, 33, 0.4);*/
+    background-image: linear-gradient(to top, #f0f0f0, #f4f4f4);
+    /*padding: $line-height-computed 0;*/
   }
   #logo {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     img {
-      width: 306px;
+      width: auto;
     }
   }
   .nav a {
@@ -50,4 +51,65 @@ $icon-font-path: "../../bootstrap/";
 }
 h1 {
   margin-bottom: 30px;
+}
+
+
+//-- Custom CSS -----------------------------------------------------------------
+
+nav#top-nav-bar{
+  margin-top: 0 !important;
+}
+.navbar-nav > li.header_btn > a,
+.navbar-nav > li#link-to-login > a, .navbar-nav > li#link-to-cart > a{
+  border: 1px solid #ddd;
+  border-top: none;
+  color: #333 !important;
+  padding: 9px 10px !important;
+}
+#spree-header .nav li.header_btn a:hover,
+#spree-header .nav li#link-to-login a:hover, .navbar-nav > li#link-to-cart > a:hover{
+  background: none repeat scroll 0 0 rgba(213, 213, 213, 0.4) !important;
+}
+
+#link-to-login .dropdown-menu{
+  width: 200px;
+}
+.navbar-form{
+  padding:0px !important;
+}
+.form-control{
+  height: 31px !important;
+}
+nav#top-nav-bar ul li{
+  padding-left: 5px !important;
+}
+.not, .current{display: none;}
+nav #main-nav-bar{
+  margin-top: 0px !important;
+  padding: 0px !important;
+}
+nav #main-nav-bar li a{
+  padding: 15px !important;
+}
+#spree-header .nav a:hover {
+  background: none repeat scroll 0 0 rgba(9, 22, 33, 1) !important;
+}
+
+// -- Media query for up to 1200px ----------------------------------
+@media (min-width:1200px){
+.container {
+  width: 1170px !important;
+}
+}
+@media (min-width:1000px){
+.custom-navbar-right{
+  float: right;
+}
+}
+
+@media (max-width:1000px){
+  .navbar-nav > li.header_btn > a,
+  .navbar-nav > li#link-to-login > a, .navbar-nav > li#link-to-cart > a{
+    border-top: 1px solid #ddd;
+  }
 }
