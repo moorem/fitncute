@@ -49,3 +49,4 @@ gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', 
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-3-stable'
 gem 'spree_contact_us', github: 'jdutil/spree_contact_us'
 gem 'spree_product_zoom', github: 'spree/spree_product_zoom'
+gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: '2-3-stable'
