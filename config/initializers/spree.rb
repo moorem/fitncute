@@ -9,6 +9,9 @@ Spree.config do |config|
 
   config.admin_interface_logo = 'admin/logo.png'
   config.logo = 'store/logo.png'
+  config.allow_guest_checkout = false
+  config.currency = 'INR'
+  config.mails_from = 'admin@fitncute.com'
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
