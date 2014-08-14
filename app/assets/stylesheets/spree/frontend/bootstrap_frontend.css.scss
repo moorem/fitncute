@@ -22,7 +22,7 @@ $icon-font-path: "../../bootstrap/";
   .nav a {
     color: #fff;
     &:hover {
-      background:rgba(9, 22, 33, 0.4);
+      background: rgba(9, 22, 33, 0.4);
     }
   }
   .navbar {
@@ -30,6 +30,7 @@ $icon-font-path: "../../bootstrap/";
     margin-bottom: 0;
   }
 }
+
 #spree-footer {
   background: $gray-dark;
   padding-top: $padding-base-horizontal;
@@ -40,69 +41,87 @@ $icon-font-path: "../../bootstrap/";
 // -- Spree Layout Custom Rules -------------------------
 
 //TODO, bug #6
-.alert-error, .alert-registration_error { @extend .alert-danger; }
-.alert-alert { @extend .alert-info; }
+.alert-error, .alert-registration_error {
+  @extend .alert-danger;
+}
+
+.alert-alert {
+  @extend .alert-info;
+}
 
 .product-body {
   height: 250px;
 }
+
 .progress-steps {
   margin-top: $line-height-computed;
 }
+
 h1 {
   margin-bottom: 30px;
 }
 
-
 //-- Custom CSS -----------------------------------------------------------------
 
-nav#top-nav-bar{
+nav#top-nav-bar {
   margin-top: 0 !important;
 }
+
 .navbar-nav > li.header_btn > a,
-.navbar-nav > li#link-to-login > a, .navbar-nav > li#link-to-cart > a{
+.navbar-nav > li#link-to-login > a, .navbar-nav > li#link-to-cart > a {
   border: 1px solid #ddd;
   color: #333 !important;
   margin-top: 7px;
   padding: 5px 10px !important;
 }
+
 #spree-header .nav li.header_btn a:hover,
-#spree-header .nav li#link-to-login a:hover, .navbar-nav > li#link-to-cart > a:hover{
+#spree-header .nav li#link-to-login a:hover, .navbar-nav > li#link-to-cart > a:hover {
   background: none repeat scroll 0 0 rgba(213, 213, 213, 0.4) !important;
 }
 
-#link-to-login .dropdown-menu{
+#link-to-login .dropdown-menu {
   width: 200px;
 }
-.navbar-form{
-  padding:0px !important;
+
+.navbar-form {
+  padding: 0px !important;
 }
-.form-control{
+
+.form-control {
   height: 31px !important;
 }
-nav#top-nav-bar ul li{
+
+nav#top-nav-bar ul li {
   padding-left: 5px !important;
 }
-.not, .current{display: none;}
-nav #main-nav-bar{
+
+.not, .current {
+  display: none;
+}
+
+nav #main-nav-bar {
   margin-top: 0px !important;
   padding: 0px !important;
 }
-nav #main-nav-bar li a{
+
+nav #main-nav-bar li a {
   padding: 15px !important;
 }
+
 #spree-header .nav a:hover {
   background: none repeat scroll 0 0 rgba(9, 22, 33, 1) !important;
 }
+
 .ec-box-header {
   background-color: #f5f5f5;
   font-weight: 600;
   padding: 10px;
-  font-size:14px;
+  font-size: 14px;
   text-align: center;
 }
 
-.product_price{
+.product_price {
   display: inline-block;
   margin-bottom: 0;
   padding: 5px;
@@ -111,50 +130,62 @@ nav #main-nav-bar li a{
   border-radius: 0.25em;
   color: #fff !important;
   line-height: 1;;
-  font-size:14px !important;
+  font-size: 14px !important;
 }
-.mrp_price{
+
+.mrp_price {
   background: red !important;
   text-decoration: line-through;
 }
-.home_cart_btn{
+
+.home_cart_btn {
   padding: 2px 11px !important;
 }
-.product-list-item{
+
+.product-list-item {
   transition: all 0.2s ease 0s;
 }
-.product-list-item:hover{
+
+.product-list-item:hover {
   transform: translateY(-5px);
 }
+
 .btn-ar.btn-success {
   background: linear-gradient(to bottom, #02c66c 5%, #02ad5e 100%) repeat scroll 0 0 #02c66c;
   border: 1px solid #02ad5e;
   color: #fff;
   box-shadow: none !important;
 }
+
 .btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn {
   font-size: 14px;
   padding: 3px 10px;
 }
-.custom-panel-footer{
+
+.custom-panel-footer {
   padding: 10px 5px !important;
 }
 
 // -- Media query for up to 1200px ----------------------------------
-@media (min-width:1200px){
-.container {
-  width: 1170px !important;
-}
-}
-@media (min-width:1000px){
-.custom-navbar-right{
-  float: right;
-}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px !important;
+  }
 }
 
-@media (max-width:1000px){
+@media (min-width: 1000px) {
+  .custom-navbar-right {
+    float: right;
+  }
+}
+
+@media (max-width: 1000px) {
   .navbar-nav > li.header_btn > a,
-  .navbar-nav > li#link-to-login > a, .navbar-nav > li#link-to-cart > a{
+  .navbar-nav > li#link-to-login > a, .navbar-nav > li#link-to-cart > a {
     border-top: 1px solid #ddd;
   }
+}
+
+.product_image {
+  max-height: 220px;
 }

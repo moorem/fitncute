@@ -32,7 +32,7 @@
               <%= link_to truncate(product.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => product.name %>
             </div>
             <div class="panel-body text-center product-body">
-              <%= link_to product_image(product, :itemprop => "image"), url, :itemprop => 'url' %>
+              <%= link_to product_image(product, :itemprop => 'image', :class => 'product_image'), url, :itemprop => 'url' %>
             </div>
             <div class="panel-footer custom-panel-footer">
               <span class="price selling lead product_price mrp_price" itemprop="price"><%= display_price(product) %></span>
