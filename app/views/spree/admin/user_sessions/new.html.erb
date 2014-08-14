@@ -1,0 +1,35 @@
+<% if flash[:alert] %>
+  <div class="flash errors"><%= flash[:alert] %></div>
+<% end %>
+
+<% @body_id = 'login' %>
+
+<div id="existing-customer" class="login-form-full">
+  <h6><%= Spree.t(:admin_login) %></h6>
+
+  <div data-hook="login">
+    <%= form_for Spree::User.new, :as => :spree_user, :url => spree.admin_create_new_session_path do |f| %>
+      <div class="form-group">
+        <div class="input-group login-input">
+          <span class="input-group-addon"><i class="fa fa-user"></i></span>
+          <%= f.email_field :email, :class => 'form-control', :placeholder => 'Email', :tabindex => 1 %>
+        </div>
+        <br>
+
+        <div class="input-group login-input">
+          <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+          <%= f.password_field :password, :class => 'form-control', :placeholder => 'Password', :tabindex => 2 %>
+        </div>
+        <div class="checkbox">
+          <label>
+            <%= f.check_box :remember_me, :tabindex => 3 %>
+            <%= f.label :remember_me, Spree.t(:remember_me) %>
+          </label>
+        </div>
+        <%= f.submit Spree.t(:login), :class => 'btn btn-ar btn-primary pull-right', :tabindex => 4 %>
+        <div class="clearfix"></div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div data-hook="login_extras"></div>

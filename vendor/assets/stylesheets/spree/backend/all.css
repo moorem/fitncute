@@ -25,3 +25,9 @@
 ul.pagination li {
   display: inline-block;
 }
+
+.login-form-full {
+  padding-top: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+}
