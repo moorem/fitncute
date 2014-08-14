@@ -109,6 +109,14 @@ GIT
       spree_core (~> 2.3.0.beta)
 
 GIT
+  remote: git://github.com/spree/spree_reviews.git
+  revision: 02a8f8808be8d8a5e2b4eec365ca631394a79a8c
+  branch: 2-3-stable
+  specs:
+    spree_reviews (1.0.0)
+      spree_core (~> 2.3.0)
+
+GIT
   remote: git://github.com/spree/spree_static_content.git
   revision: d99498f85ea22d6b06e8eda2ca10ba557a25e13c
   branch: 2-3-stable
@@ -171,6 +179,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     bootstrap-kaminari-views (0.0.3)
       kaminari (>= 0.13)
@@ -208,6 +217,7 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.2.1)
     ffaker (1.24.0)
@@ -245,6 +255,8 @@ GEM
       i18n (~> 0.6.4)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     nokogiri (1.6.3.1-x86-mingw32)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
@@ -255,6 +267,7 @@ GEM
       mime-types
     paranoia (2.0.2)
       activerecord (~> 4.0)
+    pg (0.17.1)
     pg (0.17.1-x86-mingw32)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
@@ -364,6 +377,7 @@ DEPENDENCIES
   spree_contact_us!
   spree_gateway!
   spree_product_zoom!
+  spree_reviews!
   spree_static_content!
   thin
   turbolinks

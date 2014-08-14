@@ -6,4 +6,5 @@
 *= require_tree .
  *= require spree/frontend/spree_static_content
  *= require spree/product_zoom
+ *= require spree/frontend/spree_reviews
 */
