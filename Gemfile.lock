@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: f59f49534ab050a30f9ab649ff6b82c979aec0d5
+  revision: 38cb99d879fed66789aac0a239f654a3ae40063c
   branch: 2-3-stable
   specs:
     spree (2.3.2.beta)
@@ -82,7 +82,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
-  revision: 6ec6174e2e3db12f52168e2a3efec2bb879cd67c
+  revision: d003e495fd83c41ef8378f67e21d947908a03e1f
   branch: 2-3-stable
   specs:
     spree_auth_devise (2.2.0)
@@ -103,7 +103,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_product_zoom.git
-  revision: 0a23e589a104322fbbb29bea0a78e4d177b3b256
+  revision: 63993443d7631efe8d79c631c572c152650deb77
   specs:
     spree_product_zoom (2.2)
       spree_core (~> 2.3.0.beta)
@@ -179,7 +179,6 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
-    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     bootstrap-kaminari-views (0.0.3)
       kaminari (>= 0.13)
@@ -217,7 +216,6 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.2.1)
     ffaker (1.24.0)
@@ -255,8 +253,6 @@ GEM
       i18n (~> 0.6.4)
     multi_json (1.10.1)
     multi_xml (0.5.5)
-    nokogiri (1.6.3.1)
-      mini_portile (= 0.6.0)
     nokogiri (1.6.3.1-x86-mingw32)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
@@ -267,7 +263,6 @@ GEM
       mime-types
     paranoia (2.0.2)
       activerecord (~> 4.0)
-    pg (0.17.1)
     pg (0.17.1-x86-mingw32)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
@@ -348,7 +343,7 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    uuidtools (2.1.4)
+    uuidtools (2.1.5)
     versioncake (2.3.1)
       actionpack (>= 3.2)
       activesupport (>= 3.2)
