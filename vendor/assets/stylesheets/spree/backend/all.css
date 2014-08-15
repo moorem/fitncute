@@ -65,11 +65,37 @@ ul.pagination li {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
+/* ------------ custum css ----------------*/
+#logo{
+  height: auto !important;
+}
 .tab-content {
   padding: 15px;
   border-left: solid 1px #e5e5e5;
   border-right: solid 1px #e5e5e5;
   border-bottom: solid 1px #e5e5e5;
   overflow: hidden;
+}
+
+.input-group .input-group-addon{
+  background: #0099da !important;
+  width:31px;
+  color:#fff;
+}
+.input-group{
+  width: 100%;
+}
+.login-form-full h2{
+  color:#0099da !important;
+  margin-bottom: 10px;
+}
+.checkbox{
+  margin-top: 10px;
+}
+#header{
+  background: none !important;
+}
+.admin-logo{
+  margin-bottom: 20px;
+  text-align: center;
 }

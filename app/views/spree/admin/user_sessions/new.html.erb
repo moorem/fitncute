@@ -5,9 +5,12 @@
 <% @body_id = 'login' %>
 
 <div id="existing-customer" class="login-form-full">
+  <figure id="logo" class="col-md-3 admin-logo" data-hook>
+    <%= logo %>
+  </figure>
   <div class="transparent-div no-padding animated fadeInUp animation-delay-8">
     <div class="tab-content">
-      <h6><%= Spree.t(:admin_login) %></h6>
+      <h2><%= Spree.t(:admin_login) %></h2>
 
       <div data-hook="login">
         <%= form_for Spree::User.new, :as => :spree_user, :url => spree.admin_create_new_session_path do |f| %>
@@ -37,3 +40,25 @@
   </div>
 </div>
 <div data-hook="login_extras"></div>
+
+<style>
+  header #logo{
+    display: none;
+  }
+    body.admin{
+      background: url(<%= asset_path 'admin/back.png' %>);
+      overflow:hidden;
+    }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container ,.container .sixteen.columns {
+      width: 768px; }
+  }
+  @media only screen and (max-width: 767px) {
+    .container, .container .sixteen.columns  {
+      width: 300px; }
+  }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container, .container .sixteen.columns  {
+      width: 420px; }
+  }
+</style>
