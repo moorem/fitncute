@@ -81,7 +81,7 @@ nav#top-nav-bar {
 }
 
 #link-to-login .dropdown-menu {
-  width: 200px;
+  width: 240px;
 }
 
 .navbar-form {
@@ -165,7 +165,87 @@ nav #main-nav-bar li a {
 .custom-panel-footer {
   padding: 10px 5px !important;
 }
-
+.panel-primary{
+  border-color: #428bca !important;
+}
+.panel-primary > .panel-heading {
+  background-color: #428bee !important;
+  border-color: #428bca !important;
+}
+fieldset {
+  border: none !important;
+  padding: 0 !important;
+}
+.login-group{
+  width: 100%;
+  display: table;
+}
+.login-group .form-control{
+  border-radius: 0 4px 4px 0 !important;
+}
+.input-group-addon{
+  background: #0099da !important;
+  color:#fff;
+}
+.social-icon-ar.twitter {
+  background-color: #00aced;
+  background-image: linear-gradient(to top, #00aced, #21c2ff);
+}
+.social-icon-ar.sm {
+  font-size: 15px;
+  height: 25px;
+  margin: 0 10px 10px 0;
+  width: 25px;
+}
+.social-icon-ar {
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  height: 44px;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  width: 44px;
+}
+.animation-delay-2 {
+  animation-delay: 0.2s !important;
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.social-icon-ar.google-plus {
+  background-color: #dd4b39;
+  background-image: linear-gradient(to top, #dd4b39, #e47365);
+}
+.social-icon-ar.facebook {
+  background-color: #3b5998;
+  background-image: linear-gradient(to top, #3b5998, #4c70ba);
+}
+.social-icon-ar.sm .fa {
+  padding-top: 6px;
+}
+#password-credentials a:hover{
+  color: none !important;
+}
+.btn-ar.btn-primary {
+  background: linear-gradient(to bottom, #0099da 5%, #0087c1 100%) repeat scroll 0 0 #0099da !important;
+  border: 1px solid #0087c1 !important;
+  color: #fff !important;
+  font-size:13px !important;
+  box-shadow:  none !important;
+  border-radius: 4px !important;
+  font-weight: normal !important;
+}
+.btn-ar.btn-primary:active,
+.btn-ar.btn-primary:hover{
+  background: linear-gradient(to bottom, #0087c1 5%, #0099da 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
 
 
 // -- Media query for up to 1200px ----------------------------------
