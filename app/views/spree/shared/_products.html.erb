@@ -1,6 +1,6 @@
 <%
-  paginated_products = @searcher.retrieve_products if params.key?(:keywords)
-  paginated_products ||= products
+   paginated_products = @searcher.retrieve_products if params.key?(:keywords)
+   paginated_products ||= products
 %>
 
 <% content_for :head do %>
@@ -22,11 +22,11 @@
 </div>
 
 <% if products.any? %>
-<div id="products" class="row" data-hook>
-  <% products.each do |product| %>
-    <% url = product_url(product, :taxon_id => @taxon.try(:id)) %>
-    <div id="product_<%= product.id %> " class="col-md-4 col-sm-6" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
-      <div class="panel panel-default product-list-item">
+  <div id="products" class="row" data-hook>
+    <% products.each do |product| %>
+      <% url = product_url(product, :taxon_id => @taxon.try(:id)) %>
+      <div id="product_<%= product.id %> " class="col-md-4 col-sm-6" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+        <div class="panel panel-default product-list-item">
           <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
             <div class="ec-box-header">
               <%= link_to truncate(product.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => product.name %>
@@ -35,7 +35,7 @@
               <%= link_to product_image(product, :itemprop => 'image', :class => 'product_image'), url, :itemprop => 'url' %>
             </div>
             <div class="panel-footer custom-panel-footer">
-              <span class="price selling lead product_price mrp_price" itemprop="price"><%= display_price(product) %></span>
+              <span class="price selling lead product_price mrp_price" itemprop="price"><%= display_cost_price(product) %></span>
               <span class="price selling lead product_price" itemprop="price"><%= display_price(product) %></span>
               <span class="pull-right">
                 <%= form_for :order, :url => populate_orders_path do |f| %>
@@ -48,11 +48,11 @@
               </span>
             </div>
           <% end %>
+        </div>
       </div>
-    </div>
-  <% end %>
-  <% reset_cycle("classes") %>
-</div>
+    <% end %>
+    <% reset_cycle("classes") %>
+  </div>
 <% end %>
 
 <% if paginated_products.respond_to?(:num_pages) %>
@@ -60,9 +60,9 @@
 <% end %>
 
 <script>
-  $("div.panel").hover(function(){
+  $("div.panel").hover(function () {
     $(this).filter(':not(:animated)').animate({ top: "20px" });
-  }, function() {
+  }, function () {
     $(this).animate({ top: "0px" });
   });
 </script>
