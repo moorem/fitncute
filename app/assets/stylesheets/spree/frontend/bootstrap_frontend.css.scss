@@ -33,9 +33,10 @@ $icon-font-path: "../../bootstrap/";
 
 #spree-footer {
   background: $gray-dark;
-  padding-top: $padding-base-horizontal;
+  /*padding-top: $padding-base-horizontal;*/
   margin-top: $line-height-computed;
   color: #fff;
+  font-size:14px;
 }
 
 // -- Spree Layout Custom Rules -------------------------
@@ -51,6 +52,7 @@ $icon-font-path: "../../bootstrap/";
 
 .product-body {
   height: 250px;
+  line-height: 215px;
 }
 
 .progress-steps {
@@ -119,12 +121,13 @@ nav #main-nav-bar li a {
   padding: 10px;
   font-size: 14px;
   text-align: center;
+  font-family: "Open Sans",sans-serif;
 }
 
 .product_price {
   display: inline-block;
   margin-bottom: 0;
-  padding: 5px;
+  padding: 7px;
   background-color: #0099da;
   font-family: "Open Sans";
   border-radius: 0.25em;
@@ -144,6 +147,7 @@ nav #main-nav-bar li a {
 
 .product-list-item {
   transition: all 0.2s ease 0s;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .product-list-item:hover {
@@ -245,6 +249,59 @@ fieldset {
 .btn-ar.btn-primary:active,
 .btn-ar.btn-primary:hover{
   background: linear-gradient(to bottom, #0087c1 5%, #0099da 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+.add-to-cart .product-count,
+.add-to-cart .add-cart-btn{
+  width:100% !important;
+}
+#main-image{
+  border: none !important;
+  box-shadow: none !important;
+  border-color: none !important;
+}
+.e-price {
+  background-color: #0099da;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-family: "Open Sans",sans-serif;
+}
+.e-price span{
+  color: #ffffff !important;
+  font-weight: normal !important;
+  line-height: 0.7 !important;
+}
+.custom-price-selling{
+  text-decoration: line-through;
+  padding-top: 9px;
+}
+.custom-price-offer{
+  font-size: 2em !important;
+}
+h1.product-title{
+  border-bottom: none !important;
+}
+a.button{
+  background: linear-gradient(to bottom, #0099da 5%, #0087c1 100%) repeat scroll 0 0 #0099da !important;
+  border: 1px solid #0087c1 !important;
+  color: #fff !important;
+  font-size:13px !important;
+  box-shadow:  none !important;
+  border-radius: 4px !important;
+  font-weight: normal !important;
+}
+a.button:active,
+a.button:hover{
+  background: linear-gradient(to bottom, #0087c1 5%, #0099da 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+  text-decoration: none;
+}
+footer#footer {
+  border-top: 1px solid #555;
+  color: #ccc;
+  padding: 5px 0;
+}
+textarea.form-control{
+  height: 100px !important;
 }
 
 
