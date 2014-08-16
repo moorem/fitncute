@@ -31,9 +31,10 @@
       <div data-hook="product_price" class="col-md-12">
 
         <div id="product-price">
-          <h6 class="product-section-title"><%= Spree.t(:price) %></h6>
-          <div>
-            <span class="lead price selling" itemprop="price">
+          <h6 class="product-section-title"><%#= Spree.t(:price) %></h6>
+          <div class="e-price text-center">
+            <span class="lead price selling custom-price-selling pull-left"><%= display_cost_price(@product) %></span>
+            <span class="lead price selling custom-price-offer" itemprop="price">
               <%= display_price(@product) %>
             </span>
             <span itemprop="priceCurrency" content="<%= @product.currency %>"></span>
@@ -48,12 +49,13 @@
         </div>
 
         <div class="add-to-cart">
-          <br/>
+          <div class="form-group">
+            <%= number_field_tag :quantity, 1, :class => 'title form-control product-count', :min => 1 %>
+          </div>
           <div class="input-group">
-            <%= number_field_tag :quantity, 1, :class => 'title form-control', :min => 1 %>
             <span class="input-group-btn">
-              <%= button_tag :class => 'btn btn-ar btn-success', :id => 'add-to-cart-button', :type => :submit do %>
-                <%= Spree.t(:add_to_cart) %>
+              <%= button_tag :class => 'btn btn-ar btn-success add-cart-btn', :id => 'add-to-cart-button', :type => :submit do %>
+                <%= content_tag(:span, '', :class => 'glyphicon glyphicon-shopping-cart') + " " +Spree.t(:add_to_cart) %>
               <% end %>
             </span>
           </div>
