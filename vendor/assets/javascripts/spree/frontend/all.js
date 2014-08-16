@@ -13,3 +13,4 @@
 //= require spree/frontend/spree_contact_us
 //= require spree/product_zoom
 //= require spree/frontend/spree_reviews
+//= require spree/frontend/spree_cash_on_delivery
