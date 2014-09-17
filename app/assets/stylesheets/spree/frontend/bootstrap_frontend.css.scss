@@ -328,3 +328,16 @@ textarea.form-control{
 .product_image {
   max-height: 220px;
 }
+
+.custom-error{
+  color:#dddddd;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  h1{
+    font-size: 7em;
+    color:#dddddd;
+    margin: 45px 0;
+    span{
+      font-size: 2em;
+    }
+  }
+}
