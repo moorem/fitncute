@@ -65,4 +65,14 @@
   }, function () {
     $(this).animate({ top: "0px" });
   });
+
+
+  var maxHeight = 0;
+
+  $(".ec-box-header").each(function(){
+    if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+  });
+
+  $(".ec-box-header").height(maxHeight);
+
 </script>

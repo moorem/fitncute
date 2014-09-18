@@ -341,3 +341,18 @@ textarea.form-control{
     }
   }
 }
+.cart-subtotal td h5, .cart-total td h5{
+  color: #333333 !important;
+}
+#cart-detail{
+  border: 1px solid #dddddd;
+}
+.nav-justified > li, .nav-tabs.nav-justified > li{
+  width:15%;
+}
+.table > thead > tr > th{
+  border-bottom: 1px !important;
+}
+#empty-cart{
+  margin-top: 0 !important;
+}
