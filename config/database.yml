@@ -21,7 +21,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   username: postgres
-  password: postgres
+  password: 
 
 development:
   <<: *default
@@ -83,5 +83,3 @@ test:
 production:
   <<: *default
   database: fitncute_production
-  username: fitncute
-  password: <%= ENV['FITNCUTE_DATABASE_PASSWORD'] %>
