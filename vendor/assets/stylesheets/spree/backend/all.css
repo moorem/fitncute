@@ -9,6 +9,7 @@
  *= require_self
  *= require_tree .
  *= require spree/backend/spree_cash_on_delivery
+ *= require spree/backend/spree_paypal_express
 */
 
 .container {
@@ -67,6 +68,7 @@ ul.pagination li {
   animation-fill-mode: both;
 }
 /* ------------ custum css ---------------- *= require spree/backend/spree_cash_on_delivery
+ *= require spree/backend/spree_paypal_express
 */
 #logo{
   height: auto !important;
