@@ -1,0 +1,2 @@
+<!-- insert_after '#spree-header[data-hook]' -->
+<%= yield :spree_slider %>

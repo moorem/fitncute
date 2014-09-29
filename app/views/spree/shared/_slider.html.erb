@@ -1,23 +1,54 @@
 <% if Spree::Slide.published.count > 0 %>
-  <!-- Define slider dimensions here -->
-  <style>
-    #slider { width: 680px; height: 317px; }
-    .slider-wrapper { margin:0 auto 50px auto; }
-  </style>
 
-  <!-- AnythingSlider initialization -->
-  <script>
-  // DOM Ready
-  $(function(){
-	  $('#slider').anythingSlider();
-  });
-  </script>
+  <div class="slider-wrapper theme-default">
+    <div class="ribbon"></div>
+      <div id="slider" class="nivoSlider">
+        <% Spree::Slide.published.order('position ASC').each do |s| %>
+          <% if s.body != "" %>
+            <%= image_tag(s.slide_image.url, :title => '#' + s.slide_name.to_url) %>
+            <%#= link_to image_tag(s.slide_image.url, :title => '#' + s.slide_name.to_url), url_for(s.slide_link) %>
+          <% else %>
+            <%#= link_to image_tag(s.slide_image.url), url_for(s.slide_link) %>
+            <%= image_tag(s.slide_image.url) %>
+          <% end %>
+        <% end %>
+      </div>
 
-  <div class="slider-wrapper">
-    <ul id="slider">
       <% Spree::Slide.published.order('position ASC').each do |s| %>
-        <li><%= link_to image_tag(s.slide_image.url, :title => '#' + s.slide_name.to_url), url_for(s.slide_link) %></li>
+        <div id='<%= s.slide_name.to_url %>' class='nivo-html-caption'>
+          <%#= s.body.html_safe %>
+          <h1>Mobile</h1>
+          <h2>discount</h2>
+          <ul>
+            <li><i class="fa fa-check"></i> line 1</li>
+            <li><i class="fa fa-check"></i> line 2</li>
+            <li><i class="fa fa-check"></i> line 3</li>
+          </ul>
+          <br>
+          <p class="animated fadeInUpBig animation-delay-17">
+            <span class="price-box">$2,599.00</span>
+            <a class="btn btn-ar btn-transparent btn-lg" href="#" target="_self">
+              <i class="fa fa-shopping-cart"></i>
+              Purchase
+            </a>
+          </p>
+        </div>
       <% end %>
-    </ul>
   </div>
+
+  <script type="text/javascript">
+    $(window).load(function () {
+      $('#slider').nivoSlider({
+        effect: "slide",
+        animSpeed: 500,
+        pauseTime: 3000,
+        startSlide: 0,
+        directionNav: true,
+        controlNav: true,
+        controlNavThumbs: false,
+        pauseOnHover: true,
+        manualAdvance: false
+      });
+    });
+  </script>
 <% end %>
