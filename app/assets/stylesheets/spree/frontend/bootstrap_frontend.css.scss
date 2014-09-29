@@ -359,3 +359,76 @@ textarea.form-control{
 nav#taxonomies .taxonomy-root{
   border-bottom: none !important;
 }
+/*carousel*/
+.carousel {
+  background-color: rgba(0, 153, 218, 0.9);
+}
+.carousel-control{
+  width: 10% !important
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+}
+.slide-content{
+  margin: 0 auto;
+  width: 85%;
+}
+.slider-img{
+  margin-top: 20px;
+}
+.slider-text{
+  margin-top:20px;
+  line-height:30px;
+}
+.carousel-indicators{
+  bottom: 0 !important;
+}
+.slider-text h1{
+  font-size: 3.5em;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.slider-text h2{
+  font-size: 2em;
+  color: #cdff76;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+}
+.slider-text ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li{
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+.animation-delay-17 {
+  animation-delay: 1.7s !important;
+}
+.fadeInUpBig {
+  animation-name: fadeInUpBig;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.price-box {
+  border: 1px solid #cdff76;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 2.4em;
+  margin-right: 10px;
+  padding: 9px;
+  vertical-align: middle;
+  color: #cdff76;
+}
+.btn-ar.btn-transparent {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+.btn-ar.btn-transparent:hover, .btn-ar.btn-transparent:focus, .btn-ar.btn-transparent:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
