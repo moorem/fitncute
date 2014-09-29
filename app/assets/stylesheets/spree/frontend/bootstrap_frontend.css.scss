@@ -7,7 +7,7 @@ $icon-font-path: "../../bootstrap/";
 #spree-header {
   background: #444; /*asset-url('spree_header.jpg') center center;*/
   background-size: cover;
-  margin-bottom: $line-height-computed;
+  /*margin-bottom: $line-height-computed;*/
   #header {
     /*background: rgba(9, 22, 33, 0.4);*/
     background-image: linear-gradient(to top, #f0f0f0, #f4f4f4);
@@ -432,3 +432,93 @@ nav#taxonomies .taxonomy-root{
 .btn-ar.btn-transparent:hover, .btn-ar.btn-transparent:focus, .btn-ar.btn-transparent:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+/*nivo slider*/
+.theme-default #slider {
+  margin: 0 auto 0 auto;
+  width: 100%; /* Make sure your images are the same size */
+  background: rgba(0, 153, 218, 0.9);
+}
+
+.nivoSlider img {
+  position: relative !important;
+  top: 50px !important;
+  left: 100px !important;
+  display: none;
+  max-width: 556px !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 250px !important;
+  float: left !important;
+}
+
+.slider-wrapper {
+  margin: 0 auto 50px auto;
+}
+
+.theme-default .nivo-controlNav {
+  padding: 0 !important;
+}
+
+.nivo-caption {
+  background: transparent !important;
+  top: 50px !important;
+  position: relative !important;
+  max-width: 465px !important;
+  float: right !important;
+  margin-right:100px !important;
+
+  h1{
+    font-size: 4.5em;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  h2{
+    font-size: 3em;
+    color: #cdff76;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 20px 0;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      color: #ffffff;
+      font-size: 2em;
+      line-height: 30px;
+    }
+  }
+  .animation-delay-17 {
+    animation-delay: 1.7s !important;
+  }
+  .fadeInUpBig {
+    animation-name: fadeInUpBig;
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  .price-box {
+    border: 1px solid #cdff76;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 2.4em;
+    margin-right: 10px;
+    padding: 9px;
+    vertical-align: middle;
+    color: #cdff76;
+  }
+  .btn-ar.btn-transparent {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .btn-ar.btn-transparent:hover, .btn-ar.btn-transparent:focus, .btn-ar.btn-transparent:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+}
+
+/*nivo slider*/
