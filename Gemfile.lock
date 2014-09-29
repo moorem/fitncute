@@ -17,6 +17,13 @@ GIT
       spree_core (~> 2.3.0.beta)
 
 GIT
+  remote: git://github.com/priviterag/spree_slider.git
+  revision: 49532e5d401d2d510e93a27599831bdb4d84704d
+  specs:
+    spree_slider (1.2.0)
+      spree_core (>= 2.2)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: 187a407e8707f38558192b6ccffa64c771e5a684
   branch: 2-3-stable
@@ -425,6 +432,7 @@ DEPENDENCIES
   spree_gateway!
   spree_product_zoom!
   spree_reviews!
+  spree_slider!
   spree_static_content!
   thin
   turbolinks
