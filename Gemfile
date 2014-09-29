@@ -51,3 +51,4 @@ gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: '2-3
 gem 'spree_reviews', github: 'spree/spree_reviews', branch: '2-3-stable'
 gem 'spree_cash_on_delivery', github: 'thiyagarajan/spree_cash_on_delivery'
 gem 'spree_slider', github: 'priviterag/spree_slider'
+gem 'spree_paypal_express', github: 'radar/better_spree_paypal_express', branch: '2-3-stable'

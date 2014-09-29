@@ -12,3 +12,4 @@
 //= require_tree .
 //= require spree/backend/spree_reviews
 //= require spree/backend/spree_cash_on_delivery
+//= require spree/backend/spree_paypal_express

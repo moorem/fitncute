@@ -9,8 +9,12 @@
  *= require spree/frontend/spree_reviews
  *= require spree/frontend/spree_cash_on_delivery
  *= require css/anythingslider
+<<<<<<< HEAD
  *= require themes/default/default
  *= require themes/pascal/pascal
  *= require themes/orman/orman
  *= require nivo-slider
+=======
+ *= require spree/frontend/spree_paypal_express
+>>>>>>> 3a184bc909de6a9509d67e9c65a2939be32bc8d0
 */
