@@ -1,4 +1,78 @@
-SLIDER HERE
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="slide-1 slide-content">
+        <div class="slider-img pull-left">
+          <%= image_tag 'store/slider-product-1.png' %>
+        </div>
+        <div class="slider-text pull-right">
+          <div class="">
+            <h1>Samsung Mobile</h1>
+
+            <h2>Special Offer: 15% discount</h2>
+            <ul>
+              <li><i class="fa fa-check"></i> 2,6GHz quad-core Intel Core i5</li>
+              <li><i class="fa fa-check"></i> 16GB (two 8GB) memory</li>
+              <li><i class="fa fa-check"></i> 512 SSD hard drive</li>
+            </ul>
+            <p class="animated fadeInUpBig animation-delay-17">
+              <span class="price-box">$2,599.00</span>
+              <a class="btn btn-ar btn-transparent btn-lg" href="#" target="_self">
+                <i class="fa fa-shopping-cart"></i>
+                Purchase
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="slide-2 slide-content">
+        <div class="slider-text pull-left">
+          <div class="">
+            <h1>Samsung Mobile</h1>
+
+            <h2>Special Offer: 15% discount</h2>
+            <ul>
+              <li><i class="fa fa-check"></i> 2,6GHz quad-core Intel Core i5</li>
+              <li><i class="fa fa-check"></i> 16GB (two 8GB) memory</li>
+              <li><i class="fa fa-check"></i> 512 SSD hard drive</li>
+            </ul>
+            <p class="animated fadeInUpBig animation-delay-17">
+              <span class="price-box">$2,599.00</span>
+              <a class="btn btn-ar btn-transparent btn-lg" href="#" target="_self">
+                <i class="fa fa-shopping-cart"></i>
+                Purchase
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="slider-img pull-right">
+          <%= image_tag 'store/slider-product-1.png' %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<br>
+<!--SLIDER HERE-->
+<div class="clearfix"></div>
 <% content_for :sidebar do %>
   <div data-hook="homepage_sidebar_navigation">
     <%= render :partial => 'spree/shared/taxonomies' %>
@@ -7,6 +81,10 @@ SLIDER HERE
 
 <div data-hook="homepage_products">
   <% cache(cache_key_for_products) do %>
-    <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
+    <%= render :partial => 'spree/shared/products', :locals => {:products => @products} %>
   <% end %>
 </div>
+
+<script>
+  $('.carousel').carousel()
+</script>
