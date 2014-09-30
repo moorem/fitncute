@@ -358,6 +358,21 @@ textarea.form-control{
 }
 nav#taxonomies .taxonomy-root{
   border-bottom: none !important;
+  background-color: rgba(0, 153, 218, 0.9);
+  padding:5px 10px;
+  color:#ffffff !important;
+  margin-bottom:0 !important;
+  border-radius: 5px 5px 0px 0px;
+}
+.list-group-item:first-child{
+  border-radius:0 !important;
+  border-top: 3px solid #2308DA;
+}
+.list-group-item:nth-child(2n+1){
+  border-left: 3px solid #02ad5e !important;
+}
+.list-group-item:nth-child(n+1){
+  border-left: 3px solid #00aced;
 }
 /*carousel*/
 .carousel {
@@ -522,3 +537,35 @@ nav#taxonomies .taxonomy-root{
 }
 
 /*nivo slider*/
+
+/*sidebar sub-category*/
+.hover-subcategory{
+  background: none repeat scroll 0 0 #fefefe;
+  border: 1px solid #ddd;
+  border-top: 3px solid #2308DA;
+  left: 284px;
+  position: absolute;
+  top: 38px;
+  width: 575px;
+  z-index: 2;
+  padding: 0 15px;
+
+  h3{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 5px;
+    font-size: 18px;
+  }
+  h4{
+    padding: 5px 0;
+    font-size:15px;
+  }
+  ul{
+    list-style: none;
+    margin: 0 0 10px;
+    li{
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+/*sidebar sub-category*/
