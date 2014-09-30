@@ -8,9 +8,4 @@
  *= require spree/product_zoom
  *= require spree/frontend/spree_reviews
  *= require spree/frontend/spree_cash_on_delivery
- *= require css/anythingslider
- *= require themes/default/default
- *= require themes/pascal/pascal
- *= require themes/orman/orman
- *= require nivo-slider
 */

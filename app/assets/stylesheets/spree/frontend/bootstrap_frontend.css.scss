@@ -448,96 +448,6 @@ nav#taxonomies .taxonomy-root{
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/*nivo slider*/
-.theme-default #slider {
-  margin: 0 auto 0 auto;
-  width: 100%; /* Make sure your images are the same size */
-  background: rgba(0, 153, 218, 0.9);
-}
-
-.nivoSlider img {
-  position: relative !important;
-  top: 50px !important;
-  left: 100px !important;
-  display: none;
-  max-width: 556px !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-height: 250px !important;
-  float: left !important;
-}
-
-.slider-wrapper {
-  margin: 0 auto 50px auto;
-}
-
-.theme-default .nivo-controlNav {
-  padding: 0 !important;
-}
-
-.nivo-caption {
-  background: transparent !important;
-  top: 50px !important;
-  max-width: 465px !important;
-  right: 0 !important;
-  margin-right:100px !important;
-  left: inherit !important;
-
-  h1{
-    font-size: 4.5em;
-    color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  h2{
-    font-size: 3em;
-    color: #cdff76;
-    font-weight: normal;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 20px 0;
-  }
-  ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li{
-      color: #ffffff;
-      font-size: 2em;
-      line-height: 30px;
-    }
-  }
-  .animation-delay-17 {
-    animation-delay: 1.7s !important;
-  }
-  .fadeInUpBig {
-    animation-name: fadeInUpBig;
-  }
-  .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
-  .price-box {
-    border: 1px solid #cdff76;
-    border-radius: 2px;
-    display: inline-block;
-    font-size: 2.4em;
-    margin-right: 10px;
-    padding: 9px;
-    vertical-align: middle;
-    color: #cdff76;
-  }
-  .btn-ar.btn-transparent {
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-  }
-  .btn-ar.btn-transparent:hover, .btn-ar.btn-transparent:focus, .btn-ar.btn-transparent:active {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-}
-
-/*nivo slider*/
-
 /*sidebar sub-category*/
 .hover-subcategory{
   background: none repeat scroll 0 0 #fefefe;
@@ -569,3 +479,42 @@ nav#taxonomies .taxonomy-root{
   }
 }
 /*sidebar sub-category*/
+
+/*slider main*/
+#slideshow{
+  background-color: rgba(0, 153, 218, 0.9);
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 6px;
+  .carousel-frame{
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 20px;
+    ul{
+      list-style: none;
+    }
+  }
+  .slide-img{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  }
+  .slider-prev{
+    height: 30px;
+    width: 30px;
+    background: image_url('store/arrows.png');
+    position: absolute;
+    top: 50%;
+    left: 30px;
+  }
+  .slider-next{
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    background: image_url('store/arrows.png');
+    margin-left: 30px;
+    background-position: -30px 0;
+    right: 30px;
+  }
+}
+/*slider main*/
