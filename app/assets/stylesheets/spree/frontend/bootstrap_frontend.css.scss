@@ -463,10 +463,10 @@ nav#taxonomies .taxonomy-root{
 .nivo-caption {
   background: transparent !important;
   top: 50px !important;
-  position: relative !important;
   max-width: 465px !important;
-  float: right !important;
+  right: 0 !important;
   margin-right:100px !important;
+  left: unset !important;
 
   h1{
     font-size: 4.5em;
