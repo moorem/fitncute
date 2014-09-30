@@ -110,6 +110,9 @@ nav #main-nav-bar {
 nav #main-nav-bar li a {
   padding: 15px !important;
 }
+nav #main-nav-bar li.active a {
+  background: none repeat scroll 0 0 rgba(0, 153, 218, 0.9) !important;
+}
 
 #spree-header .nav a:hover,
 .nav > li > a:hover, .nav > li > a:focus{
@@ -518,3 +521,7 @@ nav#taxonomies .taxonomy-root{
   }
 }
 /*slider main*/
+
+.section-content{
+  margin-top: 25px !important;
+}
