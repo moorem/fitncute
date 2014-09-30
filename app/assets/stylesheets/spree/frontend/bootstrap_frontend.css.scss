@@ -488,6 +488,7 @@ nav#taxonomies .taxonomy-root{
   background-color: rgba(0, 153, 218, 0.9);
   margin-bottom: 20px;
   box-shadow: 0px 1px 6px;
+  position: relative;
   .carousel-frame{
     width: 100% !important;
     height: auto !important;
@@ -506,18 +507,20 @@ nav#taxonomies .taxonomy-root{
     width: 30px;
     background: image_url('store/arrows.png');
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 30px;
+    cursor: pointer;
   }
   .slider-next{
     height: 30px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: 30px;
     background: image_url('store/arrows.png');
     margin-left: 30px;
     background-position: -30px 0;
     right: 30px;
+    cursor: pointer;
   }
 }
 /*slider main*/
