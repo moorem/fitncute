@@ -111,10 +111,10 @@ nav #main-nav-bar li a {
   padding: 15px !important;
 }
 
-#spree-header .nav a:hover {
-  background: none repeat scroll 0 0 rgba(9, 22, 33, 1) !important;
+#spree-header .nav a:hover,
+.nav > li > a:hover, .nav > li > a:focus{
+  background: none repeat scroll 0 0 rgba(0, 153, 218, 0.9) !important;
 }
-
 .ec-box-header {
   background-color: #f5f5f5;
   font-weight: 600;
@@ -466,7 +466,7 @@ nav#taxonomies .taxonomy-root{
   max-width: 465px !important;
   right: 0 !important;
   margin-right:100px !important;
-  left: unset !important;
+  left: inherit !important;
 
   h1{
     font-size: 4.5em;
