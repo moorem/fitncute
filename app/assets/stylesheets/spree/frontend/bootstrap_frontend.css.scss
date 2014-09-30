@@ -166,7 +166,11 @@ nav #main-nav-bar li.active a {
   box-shadow: none !important;
   padding: 3px 5px !important;
 }
-
+.arrow-down{
+  float: right;
+  position: relative;
+  top: 10px;
+}
 .btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn {
   font-size: 14px;
   padding: 3px 10px;
