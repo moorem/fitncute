@@ -18,4 +18,3 @@
 //= require js/jquery.anythingslider.fx
 //= require js/jquery.anythingslider.video
 //= require jquery.nivo.slider.pack.js
-//= require spree/frontend/spree_paypal_express
