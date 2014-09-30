@@ -14,7 +14,3 @@
 //= require spree/product_zoom
 //= require spree/frontend/spree_reviews
 //= require spree/frontend/spree_cash_on_delivery
-//= require js/jquery.anythingslider
-//= require js/jquery.anythingslider.fx
-//= require js/jquery.anythingslider.video
-//= require jquery.nivo.slider.pack.js

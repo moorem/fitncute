@@ -5,7 +5,6 @@
  *
 
  *= require spree/backend
-
  *= require_self
  *= require_tree .
  *= require spree/backend/spree_cash_on_delivery
@@ -34,11 +33,11 @@ ul.pagination li {
 }
 
 .transparent-div {
-  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.2),inset 0 0 2px #fff;
-  -moz-box-shadow: 0 0 4px rgba(0,0,0,0.2),inset 0 0 2px #fff;
-  box-shadow: 0 0 4px rgba(0,0,0,0.2),inset 0 0 2px #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 2px #fff;
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 2px #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 2px #fff;
   border: solid 1px #c3c3c3;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   color: #7e8488;
 }
@@ -66,12 +65,14 @@ ul.pagination li {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 /* ------------ custum css ---------------- *= require spree/backend/spree_cash_on_delivery
  *= require spree/backend/spree_paypal_express
 */
-#logo{
+#logo {
   height: auto !important;
 }
+
 .tab-content {
   padding: 15px;
   border-left: solid 1px #e5e5e5;
@@ -80,25 +81,30 @@ ul.pagination li {
   overflow: hidden;
 }
 
-.input-group .input-group-addon{
+.input-group .input-group-addon {
   background: #0099da !important;
-  width:31px;
-  color:#fff;
+  width: 31px;
+  color: #fff;
 }
-.input-group{
+
+.input-group {
   width: 100%;
 }
-.login-form-full h2{
-  color:#0099da !important;
+
+.login-form-full h2 {
+  color: #0099da !important;
   margin-bottom: 10px;
 }
-.checkbox{
+
+.checkbox {
   margin-top: 10px;
 }
-#header{
+
+#header {
   background: none !important;
 }
-.admin-logo{
+
+.admin-logo {
   margin-bottom: 20px;
   text-align: center;
 }
