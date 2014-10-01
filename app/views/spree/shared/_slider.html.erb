@@ -29,8 +29,8 @@
         <% end %>
       </ul>
     </div>
-    <a title="<%= t(:previous) %>" class="slider-prev"><%#= t(:previous) %></a>
-    <a title="<%= t(:next) %>" class="slider-next"><%#= t(:next) %></a>
+    <a title="<%= t(:previous) %>" class="slider-prev" style="display: none"><%#= t(:previous) %></a>
+    <a title="<%= t(:next) %>" class="slider-next" style="display: none"><%#= t(:next) %></a>
 
   </section>
 <% end %>
@@ -48,4 +48,8 @@
       fade: true
     });
   });
+
+  $('#slideshow').hover(function(){
+    $('.slider-prev, .slider-next').toggle();
+  })
 </script>
