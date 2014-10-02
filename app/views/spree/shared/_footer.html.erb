@@ -1,12 +1,95 @@
+<div class="footer">
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <span class="fnt-bold"> authentic products</span>
+      <span class="mrgn-lr-10">|</span>
+      <span class="fnt-bold"> free shipping on orders over rs. 499</span>
+      <span class="mrgn-lr-10">|</span>
+      <span class="fnt-bold">secure payment system</span>
+    </div>
+    <hr>
+    <div class="col-md-12">
+      <div class="col-md-2">
+        <h5>COMPANY</h5>
+        <ul>
+          <li>About Us</li>
+          <li>Core Values</li>
+          <li>Meet The Team</li>
+          <li>Press</li>
+          <li>Careers</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Need Help?</h5>
+        <ul>
+          <li>FAQ</li>
+          <li>SMS Unsubscription</li>
+          <li>How to use Promo Code</li>
+          <li>How to use fitncute cash</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Policy Info</h5>
+        <ul>
+          <li>Delivery Policies</li>
+          <li>Returns Policy</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Terms of Sale</li>
+          <li>Copyright Policy</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Categories</h5>
+        <ul>
+          <li>protein supplements</li>
+          <li>Fitness</li>
+          <li>Sports</li>
+          <li>Vitamins & Supplements</li>
+          <li>Health Food & Drinks</li>
+          <li>Health Devices</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>More Categories</h5>
+        <ul>
+          <li>Pet Care</li>
+          <li>Personal & Baby Care</li>
+          <li>Sexual Wellness</li>
+          <li>Women Care</li>
+          <li>Beauty</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5>Follow us</h5>
+        <ul>
+          <li><%= link_to (image_tag 'store/facebook.png'), 'https://www.facebook.com/fitncute' %></li>
+          <li><%= link_to (image_tag 'store/twitter.png'), 'https://twitter.com/fitncute' %></li>
+          <li><%= link_to (image_tag 'store/linkedin.png'), 'https://linkedin.com/' %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="spree-footer">
-	<div class="container">
-		<footer id="footer"  data-hook>
-		  <div id="footer-left" class="col-md-12 text-center" data-hook>
-		    <p>&copy; 2014 <%= link_to 'Fitncute', 'https://fitncute.com/' %>, inc. All rights reserved.<%#= Spree.t :powered_by  %></p>
-		  </div>
-		  <div id="footer-right" class="col-md-6 hidden" data-hook></div>
-		</footer>
-	</div>
+  <div class="container">
+    <footer id="footer" data-hook>
+      <div id="footer-left" class="col-md-12" data-hook>
+        <div class="text-left col-md-5">
+          <span class="txt-top">Pay using:&nbsp;&nbsp;</span>
+          <span class="icn icn-pmt-methods"> </span>
+          <span class="txt-top">&nbsp;| Credit Card | Cash on Delivery</span>
+        </div>
+        <div class="col-md-7 text-right">
+          <p>&copy; 2014 <%= link_to 'Fitncute', 'https://fitncute.com/' %>, inc. All rights
+            reserved. <%= Spree.t :powered_by %>: <%= link_to 'Moorem Technologies', 'http://moorem.com/' %></p>
+        </div>
+      </div>
+      <div id="footer-right" class="col-md-6 hidden" data-hook></div>
+    </footer>
+  </div>
 </div>
 
 <script>

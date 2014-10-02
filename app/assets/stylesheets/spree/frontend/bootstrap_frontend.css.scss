@@ -34,7 +34,7 @@ $icon-font-path: "../../bootstrap/";
 #spree-footer {
   background: $gray-dark;
   /*padding-top: $padding-base-horizontal;*/
-  margin-top: $line-height-computed;
+  /*margin-top: $line-height-computed;*/
   color: #fff;
   font-size:14px;
 }
@@ -306,7 +306,7 @@ a.button:hover{
   text-decoration: none;
 }
 footer#footer {
-  border-top: 1px solid #555;
+  border-top: none !important;
   color: #ccc;
   padding: 5px 0;
 }
@@ -567,4 +567,53 @@ a.scroll-to-top:hover {
 a.scroll-to-top.visible {
   filter: alpha(opacity=75);
   opacity: 0.75;
+}
+.header-info.header-resp{
+  margin-top: 5px;
+  margin-bottom:10px;
+  a{
+    margin: 0 10px;
+  }
+}
+.txt-top{
+  float: left;
+  margin-top: 10px;
+}
+.mrgn-lr-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.icn-pmt-methods {
+  background: image_url("store/online-pmt-methods.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+  height: 22px;
+  margin-top: 10px;
+  width: 107px;
+  float: left;
+  display: block;
+}
+
+.footer{
+  background: #00aced;
+  color:#fff;
+  padding-top: 20px;
+
+  .fnt-bold{
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  h5{
+    color: #fefefe;
+    text-transform: uppercase;
+  }
+  ul{
+    list-style: none;
+
+    a{
+      color: #ffffff;
+    }
+    img{
+      width: 60px;
+      height: auto;
+    }
+  }
 }
