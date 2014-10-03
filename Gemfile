@@ -32,12 +32,12 @@ gem 'unicorn', '4.8.3', group: :production
 gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'i18n', '0.6.9'
-gem 'thin'
+gem 'thin', '1.6.3'
 gem 'rails_12factor', group: :production
 
 gem 'spree', github: 'spree/spree', branch: '2-3-stable'
