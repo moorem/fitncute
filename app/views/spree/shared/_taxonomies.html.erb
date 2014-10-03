@@ -4,80 +4,20 @@
     <% cache [I18n.locale, taxonomy, max_level] do %>
       <h4 class='taxonomy-root'><%= Spree.t(taxonomy.name, :taxonomy => taxonomy.name) %><span class="glyphicon glyphicon-chevron-down arrow-down"></span></h4>
       <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
-      <!--sub category div-->
-      <div class="hover-subcategory" style="display: none">
-        <h3>Category Name <i class="fa fa-angle-double-down"></i></h3>
-        <div class="sub-categories">
-          <div class="col-md-4">
-            <h4><i class="fa fa-angle-double-right"></i> sub sub category</h4>
-            <div class="sub-sub-category-list">
-              <ul>
-                <li>product 1</li>
-                <li>product 2</li>
-                <li>product 3</li>
-                <li>product 4</li>
-                <li>product 5</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4><i class="fa fa-angle-double-right"></i> sub sub category</h4>
-            <div class="sub-sub-category-list">
-              <ul>
-                <li>product 1</li>
-                <li>product 2</li>
-                <li>product 3</li>
-                <li>product 4</li>
-                <li>product 5</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4><i class="fa fa-angle-double-right"></i> sub sub category</h4>
-            <div class="sub-sub-category-list">
-              <ul>
-                <li>product 1</li>
-                <li>product 2</li>
-                <li>product 3</li>
-                <li>product 4</li>
-                <li>product 5</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4><i class="fa fa-angle-double-right"></i> sub sub category</h4>
-            <div class="sub-sub-category-list">
-              <ul>
-                <li>product 1</li>
-                <li>product 2</li>
-                <li>product 3</li>
-                <li>product 4</li>
-                <li>product 5</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4><i class="fa fa-angle-double-right"></i> sub sub category</h4>
-            <div class="sub-sub-category-list">
-              <ul>
-                <li>product 1</li>
-                <li>product 2</li>
-                <li>product 3</li>
-                <li>product 4</li>
-                <li>product 5</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--sub category div-->
     <% end %>
   <% end %>
 </nav>
 
 <script>
+  /*$('.list-group-item').hover(
+      function(){ $('.list-group.dropdown').addClass('open') },
+      function(){ $('.list-group.dropdown').removeClass('open') }
+  )*/
   $('.list-group-item').hover(function(){
-    $('.hover-subcategory').toggle();
+    $('.hover-subcategory').css('display','block');
+  });
+  $("body").click(function(){
+    $('.hover-subcategory').css('display','none');
   });
   $('.list-group-item').append('<span class="pull-right"><i class="fa fa-angle-double-right"></i><span>');
 </script>
