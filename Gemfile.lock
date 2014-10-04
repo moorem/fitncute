@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: cdb0ffb644eb5fb098d13011d161d0201fc3078d
+  revision: 19e15aaabf1547484885a8efc3d4bdf94cb19213
   branch: 2-3-stable
   specs:
     spree (2.3.4.beta)
@@ -102,7 +102,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_gateway.git
-  revision: 131bba3feb52242407d890927c8f588b87015ec8
+  revision: 05f4f565a98478dbc4a21ac6fd9a8684c0798c51
   branch: 2-3-stable
   specs:
     spree_gateway (2.3.0.beta)
