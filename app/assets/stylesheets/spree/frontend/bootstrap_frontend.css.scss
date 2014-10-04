@@ -572,6 +572,11 @@ a.scroll-to-top.visible {
   margin-top: 5px;
   margin-bottom:10px;
   a{
+    display: block;
+    float: right;
+    margin: 2px 10px 0;
+  }
+  a:last-child{
     margin: 0 10px;
   }
 }
@@ -616,4 +621,10 @@ a.scroll-to-top.visible {
       height: auto;
     }
   }
+}
+#checkout-summary{
+  margin-top: 10px !important;
+}
+p[data-hook="use_billing"]{
+  margin-top: -10px !important;
 }
