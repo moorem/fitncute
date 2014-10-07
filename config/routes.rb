@@ -12,6 +12,16 @@ Rails.application.routes.draw do
     %w( 404 422 500 ).each do |code|
       get code, :to => 'errors#show', :code => code
     end
+
+    get '/admin/taxonomies_export' => 'admin/taxonomies#export', as: :admin_export_taxonomies
+    namespace :admin do
+      resources :taxonomies do
+        collection {
+          get :import_file_choose
+          post :import
+        }
+      end
+    end
   end
 
 

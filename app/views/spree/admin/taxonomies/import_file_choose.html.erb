@@ -1,0 +1,48 @@
+<%= render 'spree/admin/shared/configuration_menu' %>
+
+<% content_for :page_title do %>
+  <%= Spree.t(:taxonomies_import) %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <li><%= button_link_to Spree.t(:back), session[:return_to] || spree.new_admin_taxonomy_url, :icon => 'icon-arrow-left' %></li>
+  <li id="new_option_type_link"><%= button_link_to Spree.t(:new_taxonomy), spree.new_admin_taxonomy_url, :icon => 'plus', :id => 'admin_new_taxonomy_link' %></li>
+<% end %>
+
+<br/>
+<p><b>CSV file should be contain following format:</b></p>
+<br/>
+<table>
+  <thead>
+  <tr>
+    <td>Id</td>
+    <td>Parent category name</td>
+    <td>Child category name 1</td>
+    <td>Child category name 2</td>
+    <td>Child category name 3</td>
+  </tr>
+  </thead>
+  <tr>
+    <td></td>
+    <td>Fitness</td>
+    <td>Gym Essentials</td>
+    <td>Gym Bags</td>
+    <td></td>
+  </tr>
+</table>
+<br/>
+
+<%= form_tag import_admin_taxonomies_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag 'Import Taxonomies' %>
+<% end %>
+
+<br/>
+<hr>
+<b>sample file download <%= link_to 'here', '/sample_csv/taxonomies_import.csv' %></b>
+<br/>
+<hr>
+<h3>Instructions</h3>
+<ol>
+  <li>ID should be eliminated while new taxonomy</li>
+</ol>
