@@ -3,8 +3,9 @@
   <h4 class='taxonomy-root'>Categories<span class="glyphicon glyphicon-chevron-down arrow-down"></span></h4>
   <% @taxonomies.each do |taxonomy| %>
     <% cache [I18n.locale, taxonomy, max_level] do %>
-      <h6 class='list-group-item'><%= link_to(taxonomy.name, seo_url(taxonomy.root)) %></h6>
-      <%= taxonomy_taxons_tree(taxonomy.root, @taxon, max_level) %>
+      <h6 class='list-group-item taxonomy_<%= taxonomy.id %>'><%= link_to(taxonomy.name, seo_url(taxonomy.root)) %></h6>
+
+      <div class='taxonomy_<%= taxonomy.id %>'><%= taxonomy_taxons_tree(taxonomy.root, @taxon, max_level) %></div>
     <% end %>
   <% end %>
 </nav>

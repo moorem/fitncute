@@ -14,9 +14,6 @@ module ApplicationHelper
 
   def taxonomy_taxons_tree(root_taxon, current_taxon, max_level = 1)
     max_level = 2
-    puts '************************************************************'
-    puts max_level
-    puts '************************************************************'
     return '' if max_level < 1 || root_taxon.children.empty?
     content_tag :div, class: 'list-group dropdown' do
       root_taxon.children.map do |taxon|
