@@ -102,7 +102,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_gateway.git
-  revision: 05f4f565a98478dbc4a21ac6fd9a8684c0798c51
+  revision: 63df5cfc6c5768bf8ef0ebd71f0db0febaf5bf18
   branch: 2-3-stable
   specs:
     spree_gateway (2.3.0.beta)
@@ -262,7 +262,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.9)
-    jbuilder (2.1.3)
+    jbuilder (2.2.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)
