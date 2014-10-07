@@ -29,7 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn', '4.8.3', group: :production
 
 # Use Capistrano for deployment
-gem 'capistrano-rails', group: :development
+gem 'capistrano-rails', '1.1.2', group: :development
 
 # Use debugger
 #gem 'debugger', group: [:development, :test]
@@ -38,7 +38,6 @@ gem 'capistrano-rails', group: :development
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'i18n', '0.6.9'
 gem 'thin', '1.6.3'
-gem 'rails_12factor', group: :production
 
 gem 'spree', github: 'spree/spree', branch: '2-3-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-3-stable'
@@ -47,7 +46,6 @@ gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', 
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-3-stable'
 gem 'spree_contact_us', github: 'jdutil/spree_contact_us'
 gem 'spree_product_zoom', github: 'spree/spree_product_zoom', branch: '2-3-stable'
-gem 'spree_active_shipping', github: 'spree/spree_active_shipping', branch: '2-3-stable'
 gem 'spree_reviews', github: 'spree/spree_reviews', branch: '2-3-stable'
 gem 'spree_cash_on_delivery', github: 'thiyagarajan/spree_cash_on_delivery'
 gem 'spree_slider', github: 'priviterag/spree_slider'
