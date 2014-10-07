@@ -4,24 +4,18 @@
       <ul class="slider regular">
         <% Spree::Slide.published.order('position ASC').each do |s| %>
           <li class="slider-list">
-            <h1><%#= s.slide_name %></h1>
             <%= link_to image_tag(s.slide_image.url, :title => s.slide_name.to_url , :class=>'pull-left slide-img'), url_for(s.slide_link) %>
-            <div class="slider-text pull-right">
+            <div class="col-md-5 slider-text pull-right">
               <div class="">
-                <h1>Samsung Mobile</h1>
+                <h1><%= s.slide_name %></h1>
 
-                <h2>Special Offer: 15% discount</h2>
-                <ul>
-                  <li><i class="fa fa-check"></i> 2,6GHz quad-core Intel Core i5</li>
-                  <li><i class="fa fa-check"></i> 16GB (two 8GB) memory</li>
-                  <li><i class="fa fa-check"></i> 512 SSD hard drive</li>
-                </ul>
+                <h2><%= s.body.html_safe %></h2>
                 <p class="animated fadeInUpBig animation-delay-17">
                   <span class="price-box">$2,599.00</span>
-                  <a class="btn btn-ar btn-transparent btn-lg" href="#" target="_self">
+                  <%= link_to s.slide_link , :class=>"btn btn-ar btn-transparent btn-lg" do %>
                     <i class="fa fa-shopping-cart"></i>
                     Purchase
-                  </a>
+                  <%end%>
                 </p>
               </div>
             </div>
