@@ -20,7 +20,7 @@ Spree::Taxonomy.class_eval do
         puts '**********************'
         puts taxonomy_hash['Category Name']
         puts '**********************'
-        taxonomy = Spree::Taxonomy.first_or_create!(name: taxonomy_hash['Category Name'])
+        taxonomy = Spree::Taxonomy.where(name: taxonomy_hash['Category Name']).first_or_create
         # if taxonomy_hash.size > 2
         #   parent_hash = taxonomy_hash.last 2
         #   parent_taxon = Spree::Taxon.find_by_name(parent_hash[0])
