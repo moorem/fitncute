@@ -3,19 +3,25 @@
   <h4 class='taxonomy-root'>Categories<span class="glyphicon glyphicon-chevron-down arrow-down"></span></h4>
   <% @taxonomies.each do |taxonomy| %>
     <% cache [I18n.locale, taxonomy, max_level] do %>
-      <h6 class='list-group-item taxonomy_<%= taxonomy.id %>'><%= link_to(taxonomy.name, seo_url(taxonomy.root)) %></h6>
+      <h6 class='list-group-item category_list' onmouseover='hover_taxon(<%= taxonomy.id %>)'>
+        <%= link_to(taxonomy.name, seo_url(taxonomy.root)) %>
+        <span class="pull-right"><i class="fa fa-angle-double-right"></i></span>
+      </h6>
 
-      <div class='taxonomy_<%= taxonomy.id %>'><%= taxonomy_taxons_tree(taxonomy.root, @taxon, max_level) %></div>
+      <div class='hover-subcategory dropdown-menu' id='taxonomy_<%= taxonomy.id %>' style="display: none">
+        <h3><%= taxonomy.name %> <i class="fa fa-angle-double-down"></i></h3>
+        <%= taxonomy_taxons_tree(taxonomy.root, @taxon, max_level) %>
+      </div>
     <% end %>
   <% end %>
 </nav>
 
 <script>
-  $('.list-group-item').hover(function () {
-    $('.hover-subcategory').css('display', 'block');
-  });
+  function hover_taxon(value) {
+    $('.hover-subcategory').css('display', 'none');
+    $("#taxonomy_" + value).css('display', 'block');
+  }
   $("body").click(function () {
     $('.hover-subcategory').css('display', 'none');
   });
-  $('.list-group-item').append('<span class="pull-right"><i class="fa fa-angle-double-right"></i><span>');
 </script>
