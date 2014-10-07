@@ -373,15 +373,15 @@ nav#taxonomies .taxonomy-root{
   color:#ffffff !important;
   margin-bottom:0 !important;
   border-radius: 5px 5px 0px 0px;
+  border-bottom: 3px solid #2308DA !important;
 }
-.list-group-item:first-child{
-  border-radius:0 !important;
-  border-top: 3px solid #2308DA;
+.category_list.list-group-item{
+  cursor: pointer;
 }
-.list-group-item:nth-child(2n+1){
-  border-left: 3px solid #02ad5e !important;
+.category_list.list-group-item:nth-child(2n+1){
+  border-left: 3px solid #02ad5e;
 }
-.list-group-item:nth-child(n+1){
+.category_list.list-group-item:nth-child(n+1){
   border-left: 3px solid #00aced;
 }
 /*carousel*/
@@ -463,29 +463,23 @@ nav#taxonomies .taxonomy-root{
   background: none repeat scroll 0 0 #fefefe;
   border: 1px solid #ddd;
   border-top: 3px solid #2308DA;
-  left: 269px;
+  left: 285px;
   position: absolute;
-  top: -3px;
+  top: 35px;
   width: 575px;
   z-index: 2;
   padding: 0 15px;
+  border-radius: 0 !important;
 
   h3{
     border-bottom: 1px solid #dddddd;
     padding: 10px 5px;
     font-size: 18px;
   }
-  h4{
-    padding: 5px 0;
+  .sub-sub-category-list{
+    margin: 10px 0;
     font-size:15px;
-  }
-  ul{
-    list-style: none;
-    margin: 0 0 10px;
-    li{
-      font-size: 15px;
-      line-height: 25px;
-    }
+    display: block;
   }
 }
 /*sidebar sub-category*/

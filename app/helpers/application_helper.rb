@@ -15,10 +15,12 @@ module ApplicationHelper
   def taxonomy_taxons_tree(root_taxon, current_taxon, max_level = 1)
     max_level = 2
     return '' if max_level < 1 || root_taxon.children.empty?
-    content_tag :div, class: 'list-group dropdown' do
+    content_tag :div, class: 'sub-categories' do
       root_taxon.children.map do |taxon|
-        css_class = (current_taxon && current_taxon.self_and_ancestors.include?(taxon)) ? 'list-group-item active' : 'list-group-item dropdown-toggle'
-        link_to(taxon.name, seo_url(taxon), class: css_class) + taxons_tree(taxon, current_taxon, max_level - 1)
+        content_tag :div, class: 'col-md-4 sub-category-column' do
+          css_class = (current_taxon && current_taxon.self_and_ancestors.include?(taxon)) ? 'sub-sub-category-list active' : 'sub-sub-category-list'
+          link_to(taxon.name, seo_url(taxon), class: css_class) + taxons_tree(taxon, current_taxon, max_level - 1)
+        end
       end.join("\n").html_safe
     end
   end
