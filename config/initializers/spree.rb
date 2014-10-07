@@ -14,7 +14,7 @@ Spree.config do |config|
   config.mails_from = 'admin@fitncute.com'
   country = Spree::Country.find_by_name('India') if Spree::Country.table_exists?
   config.default_country_id = country.id if country.present?
-  config.max_level_in_taxons_menu = 1
+  config.max_level_in_taxons_menu = 0
   #config.site_name = 'Fit and Cute'
   #config.site_url = 'www.fitncute.com'
   # Example:
