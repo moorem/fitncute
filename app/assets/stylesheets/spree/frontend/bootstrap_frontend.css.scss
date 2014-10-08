@@ -366,7 +366,10 @@ textarea.form-control{
 #empty-cart{
   margin-top: 0 !important;
 }
-nav#taxonomies .taxonomy-root{
+#sidebar_products_search{
+  margin-top: 10px;
+}
+nav#taxonomies .taxonomy-root, #sidebar_products_search > .navigation > .filter-title{
   border-bottom: none !important;
   background-color: rgba(0, 153, 218, 0.9);
   padding:5px 10px;
@@ -375,9 +378,15 @@ nav#taxonomies .taxonomy-root{
   border-radius: 5px 5px 0px 0px;
   border-bottom: 3px solid #2308DA !important;
 }
-.category_list.list-group-item{
+.category_list.list-group-item, #sidebar_products_search > .navigation > .list-group > .list-group-item{
   cursor: pointer;
   border-left: 3px solid #00aced;
+}
+#sidebar_products_search > .navigation > .list-group > .list-group-item> label{
+  margin-bottom: 0 !important;
+}
+#sidebar_products_search > .navigation > .list-group > .list-group-item> input[type="radio"], input[type="checkbox"]{
+  margin-top: 0 !important;
 }
 .category_list.list-group-item:hover{
   background: #efefef;
