@@ -377,12 +377,10 @@ nav#taxonomies .taxonomy-root{
 }
 .category_list.list-group-item{
   cursor: pointer;
-}
-.category_list.list-group-item:nth-child(2n+1){
-  border-left: 3px solid #02ad5e;
-}
-.category_list.list-group-item:nth-child(n+1){
   border-left: 3px solid #00aced;
+}
+.category_list.list-group-item:hover{
+  background: #efefef;
 }
 /*carousel*/
 .carousel {
@@ -459,25 +457,47 @@ nav#taxonomies .taxonomy-root{
 }
 
 /*sidebar sub-category*/
+.col-md-4.sub-category-column:nth-child(3n+3){
+  border: none;
+}
+.sub-category-column{
+  border-right: 1px solid #dddddd;
+  margin:10px 0;
+  position: relative;
+  display: block;
+  min-height: 170px;
+
+  .list-group{
+    margin-bottom: 0 !important;
+  }
+  .list-group-item{
+    border: none !important;
+    margin-bottom: 0 !important;
+    padding: 2px 0px !important;
+  }
+}
 .hover-subcategory{
   background: none repeat scroll 0 0 #fefefe;
   border: 1px solid #ddd;
   border-top: 3px solid #2308DA;
-  left: 285px;
+  left: 266px;
   position: absolute;
-  top: 35px;
+  top: -6px;
   width: 575px;
   z-index: 2;
   padding: 0 15px;
   border-radius: 0 !important;
+  min-height:300px;
+  display: block;
+  cursor: auto;
 
   h3{
     border-bottom: 1px solid #dddddd;
-    padding: 10px 5px;
+    padding: 6px 5px;
     font-size: 18px;
   }
   .sub-sub-category-list{
-    margin: 10px 0;
+    margin: 0px 0 10px;
     font-size:15px;
     display: block;
   }

@@ -6,12 +6,12 @@
       <h6 class='list-group-item category_list' onmouseover='hover_taxon(<%= taxonomy.id %>)'>
         <%= link_to(taxonomy.name, seo_url(taxonomy.root)) %>
         <span class="pull-right"><i class="fa fa-angle-double-right"></i></span>
-      </h6>
 
       <div class='hover-subcategory dropdown-menu' id='taxonomy_<%= taxonomy.id %>' style="display: none">
         <h3><%= taxonomy.name %> <i class="fa fa-angle-double-down"></i></h3>
         <%= taxonomy_taxons_tree(taxonomy.root, @taxon, max_level) %>
       </div>
+      </h6>
     <% end %>
   <% end %>
 </nav>
@@ -21,7 +21,8 @@
     $('.hover-subcategory').css('display', 'none');
     $("#taxonomy_" + value).css('display', 'block');
   }
-  $("body").click(function () {
-    $('.hover-subcategory').css('display', 'none');
-  });
+    $(".category_list, .hover-subcategory").mouseout(function(){
+      $(".hover-subcategory").css('display','none')
+    })
+
 </script>
