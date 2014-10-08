@@ -457,15 +457,16 @@ nav#taxonomies .taxonomy-root{
 }
 
 /*sidebar sub-category*/
-.col-md-4.sub-category-column:nth-child(3n+3){
+.sub-category-column:nth-child(3n+3){
   border: none;
 }
 .sub-category-column{
   border-right: 1px solid #dddddd;
-  margin:10px 0;
-  position: relative;
-  display: block;
-  min-height: 170px;
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  margin: 5px 10px;
+  width: 28%;
 
   .list-group{
     margin-bottom: 0 !important;
@@ -497,7 +498,6 @@ nav#taxonomies .taxonomy-root{
     font-size: 18px;
   }
   .sub-sub-category-list{
-    margin: 0px 0 10px;
     font-size:15px;
     display: block;
   }
